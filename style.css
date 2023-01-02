@@ -1,0 +1,166 @@
+*{margin:0;
+    padding:0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+     a:hover {
+        background-color: red;
+        color: white;
+        cursor: pointer;
+   } 
+
+    body{
+        height: 100vw;
+        
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .logo {
+        display: flex;
+        width: 120px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;    
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 12px;
+        font-family: Arial;
+        font-weight: 300px;
+        width: 420px;
+        margin: 20px;  
+    }
+    
+    .buttonlgn {
+    display: flex;
+    font-family: Arial;
+    font-weight: 300px;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    border: solid black thin;
+    font-weight: bold;
+    }
+
+.hero {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;  
+}
+
+.text_cont {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;     
+    margin: 0; 
+    flex-basis: 60%; 
+    padding-top: 10%;
+    padding-left: 10%;
+    font-weight: bold;
+}
+
+.skills {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.london{
+    text-decoration: line-through;
+}
+
+.isun {
+    margin-left: 2%;    
+    margin-right: 2%;
+    color: red;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;   
+}
+
+.buttongp{
+    background-color: black;
+    color: white;
+    border: solid black; 
+    margin: 0;
+    font-size: 12px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.buttonlp{
+    border: solid black;
+    font-size: 12px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* .dev_img {
+    width: 50%;
+    height: 50%;
+} */
+
+.diagonal {
+    display: flex;
+    height: 13vh;
+    width: 100vw;
+    background-color: black;
+    transform: skewY(-3deg);
+    margin-top: 0;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+}   
+
+@media(max-width: 1200px){
+.diagonal{
+    transform: skewy(0deg);
+}
+}
+
+@media(max-width: 1085px){
+   .hero{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   }
+   .diagonal{
+    flex-wrap: wrap;
+    font-size: 9px;    
+    }
+    .dev_img{
+    max-width: auto;
+    max-height: auto;    
+   }
+   .buttons{
+    justify-content: center;
+   }
+
+}
+
+
